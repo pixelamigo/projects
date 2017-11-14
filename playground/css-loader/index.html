@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Loader</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+        
+        body {
+            font-family: sans-serif;
+            height: 100%;
+            background-color: #ddd;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header,
+        main {
+            flex: auto;
+            text-align: center;
+            width: 100%;
+        }
+        
+        header {
+            max-height: 5rem;
+            color: #fafafa;
+            background-color: #232323;
+            min-height: 1rem;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+        
+        .loader-wrapper {
+            background-color: #eee;
+            text-align: center;
+            margin: auto;
+            padding: 1rem;
+            border-radius: 2px;
+            width: 90%;
+        }
+        
+        .loader {
+            margin: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #41B6E6;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+        
+        .loader_style_01 {
+            width: 3rem;
+            height: 3rem;
+            border: 2.75rem solid #ddd;
+            border-top: 2.75rem solid #B11F30;
+            animation: spin 1.5s linear infinite;
+        }
+        
+        .loader_style_02 {
+            border-top: 16px solid #41B6E6;
+            border-bottom: 16px solid #41B6E6;
+            animation: spin 2s linear infinite;
+        }
+        
+        .loader_style_03 {
+            border-top: 16px solid #41B6E6;
+            border-right: 16px solid #373C3F;
+            border-bottom: 16px solid #B11F30;
+        }
+        
+        .loader_style_04 {
+            border-top: 16px solid #41B6E6;
+            border-right: 16px solid #373C3F;
+            border-bottom: 16px solid #B11F30;
+            border-left: 16px solid #EA9C2D;
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <main class="flex-item">
+        <div class="loader-wrapper">
+            <p>dr.klein.de</p>
+            <div class="loader loader_style_01"></div>
+
+            <div class="loader"></div>
+
+            <div class="loader loader_style_02"></div>
+            <div class="loader loader_style_03"></div>
+            <div class="loader loader_style_04"></div>
+        </div>
+    </main>
+
+</body>
+
+</html>
