@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>M O N D R I A N</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            color: #ef8407;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.75rem;
+        }
+        
+        header,
+        main {
+            flex: auto;
+            text-align: center;
+            width: 100%;
+        }
+        
+        header {
+            color: #fafafa;
+            background-color: #000;
+            min-height: 1rem;
+            flex-grow: 1;
+        }
+        
+        main {
+            background-color: #ffae00;
+            min-height: 1rem;
+            flex-grow: 4;
+            height: 100%;
+        }
+        
+        .canvas {
+            background-color: #fff;
+            border: 1px solid #020202;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .col {
+            min-height: 2rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .col div {
+            border: 4px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #222;
+            font-size: 1rem;
+        }
+        
+        .h_12 {
+            height: 12.5%;
+        }
+        
+        .h_25 {
+            height: 25%;
+        }
+        
+        .noborder_b {
+            border-bottom-width: 0px!important;
+        }
+        
+        .noborder_t {
+            border-top-width: 0px!important;
+        }
+        
+        .yellow {
+            background-color: #ffeb00;
+        }
+        
+        .blue {
+            background-color: blue;
+        }
+        
+        .black {
+            background-color: #000;
+        }
+        
+        .white {
+            background-color: #fff;
+        }
+        
+        .red {
+            background-color: #d80000;
+        }
+        
+        footer {
+            flex-basis: 1;
+            text-align: center;
+            width: 100%;
+            color: #5c5c5c;
+            background-color: #fff;
+            font-weight: 300;
+            font-size: .5rem;
+            line-height: 1.125em;
+        }
+        
+        footer>p::after,
+        footer>p::before {
+            content: "";
+            display: inline-block;
+            margin: .25rem;
+            width: .875rem;
+            border-top: 1px solid #5c5c5c;
+        }
+        
+        h1 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="flexwrapper">
+        <h1>MONDRIAN</h1>
+    </header>
+    <main>
+        <div class="canvas">
+
+            <div class="col">
+                <div class="h_12 col_01 white">1a</div>
+                <div class="h_12 col_02 white ">2a</div>
+                <div class="h_25 col_03 white">3a</div>
+                <div class="h_25 col_04 yellow">4a</div>
+            </div>
+
+            <div class="col">
+                <div class="h_12 col_01 white">1b</div>
+                <div class="h_12 col_02 red _noborder_b ">2b</div>
+                <div class="h_25 col_03 red _noborder_t">3b</div>
+                <div class="h_25 col_04 black">4b</div>
+            </div>
+            <div class="col">
+                <div class="h_12 col_01 yellow">1c</div>
+                <div class="h_12 col_02 yellow">2c</div>
+                <div class="h_25 col_03 white">3c</div>
+                <div class="h_25 col_04 blue">4c</div>
+            </div>
+            <div class="col">
+                <div class="h_12 col_01 white">1d</div>
+                <div class="h_12 col_02 white ">2d</div>
+                <div class="h_25 col_03 white">3d</div>
+                <div class="h_25 col_04 yellow">4d</div>
+            </div>
+            <div class="col">
+                <div class="h_12 col_01 white">1</div>
+                <div class="h_12 col_02 white ">2</div>
+                <div class="h_25 col_03 white">3</div>
+                <div class="h_25 col_04 yellow">4</div>
+            </div>
+
+
+        </div>
+    </main>
+    <footer>
+        <p>Pixelamigo</p>
+    </footer>
+
+
+</body>
+
+</html>
